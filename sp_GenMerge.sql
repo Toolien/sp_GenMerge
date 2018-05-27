@@ -4,15 +4,15 @@ IF(SELECT OBJECT_ID('sp_GenMerge', 'P')) IS NOT NULL
     DROP PROC sp_GenMerge;
 GO
 /***********************************************************************************************************************************************
-Autor:		 Micha≥ Go≥oú http://toolien.pl/sp_genmerge/
+Autor:		 Micha≈Ç Go≈Ço≈õ http://toolien.pl/sp_genmerge/
 Description: Quickly and efficiently generate a MERGE statement with data,
 			 which will execute INSERT / UPDATE / DELETE on the basis of the source key from the source in the target table.
 
 Typical use cases:
-ï	Generate scripts for static dictionaries, save the .sql file in the code repository and continue to use it for Dev / Test / Prod implementations
-ï	Generate data from the Prod environment to reproduce them in your Dev/Test environment.
-ï	Generated scripts can be modified and restarted to migrate changes between environments.
-ï	Enter the test data into the Dev environment and then generate the script,  
+‚Ä¢	Generate scripts for static dictionaries, save the .sql file in the code repository and continue to use it for Dev / Test / Prod implementations
+‚Ä¢	Generate data from the Prod environment to reproduce them in your Dev/Test environment.
+‚Ä¢	Generated scripts can be modified and restarted to migrate changes between environments.
+‚Ä¢	Enter the test data into the Dev environment and then generate the script,  
 	so that you can always restore the test database with the correct sample data
 
 The PrintMAX procedure by Ben Dill's was used: https://weblogs.asp.net/bdill/sql-server-print-max
