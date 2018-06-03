@@ -19,7 +19,7 @@ If the lines are too large and SSMS crops the text, copy the print text and past
 ##### Example of use:
 #
 ```sql
-EXEC sp_GenMerge 'Sales.Currency'
+sp_GenMerge 'Sales.Currency'
 ```
 
 ```sql
