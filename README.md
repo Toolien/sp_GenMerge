@@ -26,13 +26,13 @@ sp_GenMerge 'Sales.Currency'
 EXEC sp_GenMerge
      @source_table           = 'Person.Person'
    , @skip_columns           = 'AdditionalContactInfo, ModifiedDate'
-   , @update_only_if_changed = 0`
+   , @update_only_if_changed = 0
 ```  
 
 ```sql
 EXEC sp_GenMerge
      @source_table  = 'Production.ScrapReason'
-   , @skip_identity = 0`
+   , @skip_identity = 0
 ```   
 
 ```sql
@@ -40,7 +40,7 @@ EXEC sp_GenMerge
      @source_query  = 'SELECT ScrapReasonID, ''DEV_'' + Name AS Name, GETDATE() AS ModifiedDate  FROM Production.ScrapReason'
    , @target_table  = 'Production.ScrapReason'
    , @on_condition  = 'Target.ScrapReasonID = Source.ScrapReasonID'
-   , @skip_computed = 0`
+   , @skip_computed = 0
 ```
 
 ```sql
